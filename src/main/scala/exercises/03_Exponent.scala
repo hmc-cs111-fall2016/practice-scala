@@ -5,6 +5,8 @@ object Exponent {
   /**
    * Provide a recursive implementation of the exponent function:
    * 		expt(n, e) = n^e
+   *
+   * You can assume that n and e are both non-negative
    * 
    * For a description of a recursive exponent algorithm and code in Java, see:
    * 		https://www.cs.cmu.edu/~ref/pgss/lecture/7/
