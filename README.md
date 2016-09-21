@@ -83,6 +83,24 @@ In general, for each exercise, do the following:
 If you want use ScalaIDE to work on your project, **run `sbt eclipse` in the 
 top directory** (the one with `build.sbt` in it), then import the project.
 
+#### Running code and tests with ScalaIDE
+None of the exercises are meant to be run as programs. Instead, you can run
+the tests for each exercise. To run *all* the tests, right-click on the
+`src/test/scala/exercises` package (in the "Package Explorer, on the left side
+of the screen) and select `Run as ▸ ScalaTest - Package`.
+
+To run a single test, open the test file and right click in the Editor (or you
+can just right click on the test file's name in the Package Explorer) and select
+either:
+  - `Run as ▸ ScalaTest - File` (if the file contains ScalaTest tests). The
+  test results will show up in the ScalaTest window, usually found along the 
+  left side of the screen.
+  - `Run as ▸ Scala - Application` (if the file contains ScalaCheck tests). The
+  test results will show up in the Console window, usually found along the
+  bottom of the screen.
+
+
+
 ### Running code and tests with `sbt`
 None of the exercises are meant to be run as programs. Instead, you can run
 the tests for each exercise. To run all tests in sbt, you can type the following
