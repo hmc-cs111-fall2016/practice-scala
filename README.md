@@ -6,7 +6,7 @@ The goal of this assignment is to help you become familiar with Scala and the
 development tools we'll be using this semester. When you're done, you should: 
 
   - feel you've had good practice with the basics of Scala: variables, data
-  structures, functions, classes, tests
+  structures, functions, tests
   - have lots of questions about why Scala was designed the way it was
 
 _Credits:_ Much of this assignment is based on the 
@@ -15,7 +15,7 @@ practice to fork the
 [Scala Labs repository](https://github.com/scala-labs/scala-labs/), then modify
 the fork. But I didn't want our pull requests to accidentally go to Scala Labs,
 so I cloned the lab instead. We'll do only a small part of the lab, so I removed
-the other parts.*
+the other parts.
 
 ## Instructions
 **Read the WHOLE document (and the linked pages) very carefully, before you
@@ -124,8 +124,9 @@ $ sbt
 ```
 
 ## Write about Scala
-Take about 20 minutes to collect and write about your initial impressions of
-Scala. Write about them in `scala-thoughts.md` Some possible topics include: 
+After completing the exercises, take about 20 minutes to collect and write about
+your initial impressions of Scala. Write about them in `scala-thoughts.md` Some
+possible topics include:
 
   - What's easy to do in Scala? What's not?
   - What is/are your favorite language design choice(s) that the designers of Scala 
@@ -155,9 +156,9 @@ providing feedback:
   - If a team has raised a question in the comments of their code, or in their
   writings about Scala, try to answer it!
 
-## Bonus exercise
-There are two bonus exercise: `Rainfall.scala` and `Webscraper.scala`. These
-exercise are for your enjoyment, if you'd like to play with Scala a little bit 
+## Bonus exercises
+There are two bonus exercises: `Rainfall.scala` and `Webscraper.scala`. These
+exercises are for your enjoyment, if you'd like to play with Scala a little bit 
 more. There's no extra credit for them; they're just fun.
 
 The `Rainfall.scala` exercise is mostly self-explanatory: it's similar in nature
@@ -170,7 +171,6 @@ get started, head over the the
 Follow the instructions to add the library's dependency to sbt. (Note: if you're
 using ScalaIDE, you'll need to re-run `sbt eclipse`. Then, you can refresh the 
 project in ScalaIDE, to make sure the new library is included in your project.)
-
 After you've added the web-scraping library, look at some examples and play 
 around with writing a program that parses a webpage and produces interesting 
 results.
