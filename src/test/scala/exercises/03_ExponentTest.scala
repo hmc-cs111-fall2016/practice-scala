@@ -1,11 +1,15 @@
 package exercises
 
-import org.scalacheck.Properties
+import org.scalacheck.Gen.choose
 import org.scalacheck.Prop.forAll
-import org.scalacheck.Prop.BooleanOperators
+import org.scalacheck.Properties
 
 object ExponentCheck extends Properties("ExponentCheck") {
-  property("expt") = forAll{ (n: Int, e: Int) ⇒
-    (n >= 0 && e >=0 && e < 1024) ==> (Exponent.expt(n, e) == scala.math.pow(n, e))    
+  val smallNN = for  {
+    n ← choose(0, 5)
+  } yield n
+  
+  property("expt") = forAll(smallNN, smallNN) { (n: Int, e:Int) ⇒
+    Exponent.expt(n, e) == scala.math.pow(n, e)    
   }
 }
